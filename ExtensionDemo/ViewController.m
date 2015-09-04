@@ -45,13 +45,17 @@
     
     UILabel *lbl = [[UILabel alloc] initWithFrame:CGRectMake(30, 300, 140, 40)];
     lbl.text = @"test";
+    lbl.textAlignment = NSTextAlignmentCenter;
+    lbl.backgroundColor = [UIColor grayColor];
+    [lbl setFontHelevetica:15];
     
- //   [self.view addSubview:lbl];
+    [self.view addSubview:lbl];
     
-    [UIExtensions createLableWithController:self Tag:11 Frame:CGRectMake(30, 300, 140, 40)];
-      lbll =  (UILabel*)[self.view viewWithTag:11]    ;
     
-    [lbll setBackgroundColor:[UIColor redColor]];
+ //   [UIExtensions createLableWithController:self Tag:11 Frame:CGRectMake(30, 300, 140, 40)];
+   //   lbll =  (UILabel*)[self.view viewWithTag:11]    ;
+    
+ //   [lbll setBackgroundColor:[UIColor redColor]];
     
     
 }
